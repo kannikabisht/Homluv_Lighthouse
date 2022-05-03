@@ -1,0 +1,13 @@
+for (( i=1; i <= 5; i++))
+do
+	lighthouse https://sprint.homluv.com --preset="desktop" --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Desktop\SprintHome$i.html"											
+	lighthouse https://sprint.homluv.com/kitchens --preset="desktop" --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Desktop\SprintRoomSRP$i.html"											
+	lighthouse https://sprint.homluv.com/austin_t269 --preset="desktop" --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Desktop\SprintLocationSRP$i.html"											
+	lighthouse https://sprint.homluv.com/kitchens-austin_t269 --preset="desktop" --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Desktop\SprintLevel2SRP$i.html"											
+	lighthouse https://sprint.homluv.com/details/ca/paramount/residence-one-somerset-homes/p1641325 --preset="desktop" --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Desktop\SprintHomeDetail$i.html"
+	lighthouse https://sprint.homluv.com --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Mobile\SprintHome$i.html"												
+	lighthouse https://sprint.homluv.com/kitchens --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Mobile\SprintRoomSRP$i.html"												
+	lighthouse https://sprint.homluv.com/dallas_t275 --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Mobile\SprintLocationSRP$i.html"												
+	lighthouse https://sprint.homluv.com/kitchens-dallas_t275 --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Mobile\SprintLevel2SRP$i.html"												
+	lighthouse https://sprint.homluv.com/details/ca/paramount/residence-one-somerset-homes/p1641325 --chrome-flags="--headless" --output html --output-path "C:\Users\kbisht\Downloads\lighthouse\Mobile\SprintHomeDetail$i.html"												
+done
